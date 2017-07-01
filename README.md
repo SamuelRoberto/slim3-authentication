@@ -11,24 +11,30 @@ So I decided to create and share this simple skeleton. Hope it will help you!
 ## Table of Content
 - [Getting Started](#getting-started)
 - [Run Project](#run-project)
-- [What's included](#whats-included)
+- [What is included](#what-is-included)
+- [Authors](#autors)
 - [Mind Mapping](#mind-mapping)
 - [Documentation](#documentation)
 - [Contributing](#contributing)
 - [Licenses](#licenses)
 
 ## Getting Started
-Navigate into your folder and issuing this command into a command line (you MUST have installed Composer!)
 
-    $ composer create-project --no-interaction samuelr/slim3-auth myapp-name
+### Prerequisites
+You have to install Composer before running the installation command.
+<a href="https://getcomposer.org/">Click here</a> to see more information about Composer!
 
+### Installing
+Navigate into your folder and issuing this command into a command line
+
+    `$ composer create-project --no-interaction samuelr/slim3-auth myapp-name`
 ### Run Project
 
 1. `$ cd myapp-name`
 2. `$ sudo php -S 0.0.0.0:8888 -t public public/index.php`
 3. Browse to http://localhost:8888
 
-If you have any problem make sure that you launched this command with Sudo.
+If you have any problem make sure that you launched this command with <b>sudo</b>!
 
 ## What is included
 In this project you will find a Slim3-Based Project with:
@@ -39,12 +45,18 @@ In this project you will find a Slim3-Based Project with:
 5. Integrated Monolog logger
 6. Clean and easily editable code
 
+## Authors
+
+* Samuel Roberto - Initial project
+
+See also the list of <a href="https://github.com/SamuelRoberto/slim3-authentication/graphs/contributors">contributors</a> who participated in this project.
+
 ## Mind Mapping
-You can find a full mind mapping for this project here.
+You can find a full mind mapping for this project here. (Coming Soon)
 
 ## Documentation
 
-### Create databases table
+### Create and import database
 To create database table open your MySQL (or MariaDB) console and launch the queries that you find in <b>'myapp-name/db/slim3_auth_example.sql'</b>.
 However these are the schemas:
 ```mysql
@@ -92,7 +104,7 @@ However these are the schemas:
 
 ```
 
-### Set Database variables
+### Database settings
 Now open the folder <b>'myapp-name/app/src/config.php'</b>.
 You will find the following code:
 
@@ -102,7 +114,7 @@ DEFINE('DB_USER', 'root');
 DEFINE('DB_PASS', '');
 DEFINE('DB_NAME', 'slim3_auth');
 ```
-Now you can set your Database host, user, password and name.
+Now you can set your Database's host, user, password and name.
 
 ## Key directories
 
@@ -110,12 +122,15 @@ Now you can set your Database host, user, password and name.
 * `app/src`: All class files within the `App` namespace
 * `app/templates`: Twig template files
 * `cache/twig`: Twig's Autocreated cache files
+* `db`: Database Files
 * `log`: Log files
 * `public`: Webserver root
 * `vendor`: Composer dependencies
 
-## Contributing
+You can see full a directory tree <a href="https://mind42.com/public/6a1fac38-54f0-448b-a1ac-c1202683dcab">at this link.</a>
 
+## Contributing
+See the list of <a href="https://github.com/SamuelRoberto/slim3-authentication/graphs/contributors">contributors</a> who participated in this project.
 
 ## Licenses
 * `Slim3-Session-Base-Authentication`: Code released under MIT License
