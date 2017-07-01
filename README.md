@@ -25,8 +25,10 @@ Navigate into your folder and issuing this command into a command line (you MUST
 ### Run Project
 
 1. `$ cd myapp-name`
-2. `$ php -S 0.0.0.0:8888 -t public public/index.php`
+2. `$ sudo php -S 0.0.0.0:8888 -t public public/index.php`
 3. Browse to http://localhost:8888
+
+If you have any problem make sure that you launched this command with Sudo.
 
 ## What is included
 In this project you will find a Slim3-Based Project with:
