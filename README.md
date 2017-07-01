@@ -52,7 +52,9 @@ In this project you will find a Slim3-Based Project with:
 See also the list of <a href="https://github.com/SamuelRoberto/slim3-authentication/graphs/contributors">contributors</a> who participated in this project.
 
 ## Mind Mapping
-You can find a full mind mapping for this project here. (Coming Soon)
+You can find a full mind mapping for this project here:
+* <a href="https://mind42.com/public/76fd491e-8c5b-4c57-b1d3-8c49f2ead066">Routes' mind-mapping</a>
+* <a href="https://mind42.com/public/6a1fac38-54f0-448b-a1ac-c1202683dcab">Structure's mind-mapping</a>
 
 ## Documentation
 
@@ -127,7 +129,7 @@ Now you can set your Database's host, user, password and name.
 * `public`: Webserver root
 * `vendor`: Composer dependencies
 
-You can see full a directory tree <a href="https://mind42.com/public/6a1fac38-54f0-448b-a1ac-c1202683dcab">at this link.</a>
+You can see a full structure <a href="https://mind42.com/public/6a1fac38-54f0-448b-a1ac-c1202683dcab">at the following link.</a>
 
 ## Contributing
 See the list of <a href="https://github.com/SamuelRoberto/slim3-authentication/graphs/contributors">contributors</a> who participated in this project.
