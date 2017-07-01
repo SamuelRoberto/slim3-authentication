@@ -1,3 +1,6 @@
 vendor/
 log/*
 cache/*
+.idea/*
+.tmp/*
+.versions/*
