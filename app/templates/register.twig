@@ -1,0 +1,42 @@
+{% extends "/layout/skeleton.twig" %}
+
+{% block title %}
+    Register Page
+{% endblock %}
+
+{% block cssInclude %}
+    <link href='{{ base_url() }}/css/login_register.css' rel='stylesheet' type='text/css'>
+{% endblock %}
+{% block body %}
+    <div class="login-body">
+        <article class="container-login center-block">
+            <section>
+                <ul id="top-bar" class="nav nav-tabs nav-justified">
+                    <li><a href="{{ base_url() }}/login/">Login Request</a></li>
+                    <li class="active"><a href="{{ base_url() }}/register/">Register</a></li>
+                </ul>
+                <div class="tab-content tabs-login col-lg-12 col-md-12 col-sm-12 cols-xs-12">
+                    <div id="login-access" class="tab-pane fade active in">
+                        <h2><i class="glyphicon glyphicon-user"></i> Register</h2>
+                        <form method="post" action="/register" accept-charset="utf-8" autocomplete="off" role="form" class="form-horizontal">
+                            <div class="form-group ">
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" class="form-control" name="email" id="email"
+                                       placeholder="Email" tabindex="1" value="" />
+                            </div>
+                            <div class="form-group ">
+                                <label for="password" class="sr-only">Password</label>
+                                <input type="password" class="form-control" name="password" id="password"
+                                       placeholder="Password" value="" tabindex="2" />
+                            </div>
+                            <br/>
+                            <div class="form-group ">
+                                <button type="submit" name="log-me-in" id="submit" tabindex="5" class="btn btn-lg btn-primary">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </div>
+{% endblock %}

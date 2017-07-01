@@ -1,0 +1,25 @@
+{
+    "name": "samuelr/slim3-authentication",
+    "description": "Slim3 Session-Based Authentication",
+    "license": "MIT",
+    "type": "project",
+    "keywords": ["slim3-framework", "authentication", "session-auth-php", "slim-auth"],
+    "authors": [
+        {
+            "name": "Samuel Roberto",
+            "email": "samuel.roberto997@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/src"
+        }
+    },
+    "require": {
+        "slim/slim": "^3.0",
+        "slim/twig-view": "^2.0",
+        "slim/flash": "^0.1.0",
+        "monolog/monolog": "^1.13",
+        "bryanjhv/slim-session": "~3.0"
+    }
+}

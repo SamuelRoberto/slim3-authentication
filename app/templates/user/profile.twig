@@ -1,0 +1,55 @@
+{% extends "/layout/skeleton.twig" %}
+
+{% block title %}
+    Profile
+{% endblock %}
+
+{% block cssInclude %}
+    <link href='{{ base_url() }}/css/profile.css' rel='stylesheet' type='text/css'>
+{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="profile-head">
+            <div class="profiles col-xs-8 col-xs-push-2  col-sm-10 col-sm-push-1 thumbnail">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="row">
+                        <img src="{{ base_url() }}/img/samuel_roberto_logo_big.png" class="img-responsive" />
+
+                    </div>
+                </div>
+                <div class="col-md-9 visible-lg">
+                    <div class="row">
+                        <span class="col-sm-12"><h5>Samuel Roberto</h5></span>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+
+                            <p>Web Developer / Designer </p>
+                            <ul>
+                                <li><span >Email:</span><span>samuel.roberto997@gmail.com</span></li>
+                                <li><span>Year of birth: 1997</span></li>
+                                <li><span>Age: 19</span></li>
+                                <li><span>Title of study: Computer Science's High school diploma</span></li>
+
+                            </ul>
+                        </div><!--col-md-8 col-sm-8 col-xs-12 close-->
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+
+                            <p>Web Developer / Designer </p>
+                            <ul>
+                                <li><span >Project Coded with:</span><span></span></li>
+                                <li><span>HTML / CSS / JavaScript</span></li>
+                                <li><span>PHP / MySQL</span></li>
+                                <li><span>Slim3 / Bootstrap3 / FontAwesome</span></li>
+                                <li><span>Developed in 2017</span></li>
+
+                            </ul>
+                            <a class="btn btn-large btn-primary" href="/logout">Logout</a>
+                        </div><!--col-md-8 col-sm-8 col-xs-12 close-->
+                    </div>
+                </div>
+            </div>
+        </div><!--profile-head close-->
+    </div>
+</div>
+{% endblock %}

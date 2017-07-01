@@ -1,0 +1,135 @@
+{% extends "/layout/skeleton.twig" %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block cssInclude %}
+    <link href='{{ base_url() }}/css/home.css' rel='stylesheet' type='text/css'>
+{% endblock %}
+
+{% block body %}
+<div class="navbar-wrapper">
+    <div class="container">
+        <div class="navbar navbar-default navbar-static-top">
+
+            <div class="navbar-header">
+                <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="navbar-brand" href="#">Slim3 Auth</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="/login/" target="ext">Login</a></li>
+                    <li><a href="/register/">Register</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Private <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/user/profile">Profile</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div><!-- /container -->
+</div><!-- /navbar wrapper -->
+
+
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="{{ base_url() }}/img/bg_carousel.jpg" style="width:100%" class="img-responsive">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Slim3 Authentication Example</h1>
+                    <p>Authentication example developed by Samuel Roberto</p>
+                    <p><a class="btn btn-lg btn-primary" href="/login/">Login</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{{ base_url() }}/img/bg_carousel.jpg" class="img-responsive">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Design based on Boostrap 3 & FontAwesome</h1>
+                    <p>This codebase includes Boostrap 3 and FontAwesome! You can use them without include nothing!</p>
+                    <p><a class="btn btn-large btn-primary" href="/register/">Register</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{{ base_url() }}/img/bg_carousel.jpg" class="img-responsive">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>View on GitHub</h1>
+                    <p>Support this project on GitHub.</p>
+                    <p><a class="btn btn-large btn-primary" href="#">Go to GitHub</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="icon-next"></span>
+    </a>
+</div>
+<!-- /.carousel -->
+
+
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img class="img-circle" src="{{ base_url() }}/img/samuel_roberto_logo.png">
+            <h2>Slim3 Framework + Authentication</h2>
+            <p>A Slim3's application that implements a session's based Authentication.</p>
+            <p><a class="btn btn-default" href="/login/">Login »</a></p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img class="img-circle" src="{{ base_url() }}/img/samuel_roberto_logo.png">
+            <h2>MySQL's Function</h2>
+            <p>Login function based on MySQL database that manage users.</p>
+            <p><a class="btn btn-default" href="/register/">Register »</a></p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img class="img-circle" src="{{ base_url() }}/img/samuel_roberto_logo.png">
+            <h2>Bootstrap3 & FontAwesome</h2>
+            <p>In this code you will find Bootstrap3 and FontAwesome already implemented.</p>
+            <p><a class="btn btn-default" href="#">Go to GitHub »</a></p>
+        </div>
+    </div><!-- /.row -->
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>Developed by Samuel Roberto</p>
+    </footer>
+
+</div><!-- /.container -->
+{% endblock %}
